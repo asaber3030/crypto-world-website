@@ -1,0 +1,60 @@
+@import "../../assets/css/global";
+
+#choose {
+  padding: 100px 0;
+  .header {
+    text-align: center;
+    h1 {
+      font-size: 75px;
+      span {
+        background: $default-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    gap: 25px;
+    width: 75%;
+    margin: 90px auto;
+    .center-picture {
+      text-align: center;
+      img {
+        max-width: 100%;
+        margin: auto;
+      }
+    }
+    .icons-section {
+      .item {
+        display: flex;
+        margin-bottom: 100px;
+        gap: 20px;
+        .left-item {
+          height: fit-content;
+          padding: 10px;
+          border-radius: 5px;
+          background: $default-gradient;
+          img {
+            max-width: 100%;
+            width: 64px;
+          }
+        }
+        .right-item {
+          h1 {
+            font-size: 25px;
+            font-width: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 15px;
+            color: #ddd;
+          }
+        }
+      }
+    }
+  }
+}

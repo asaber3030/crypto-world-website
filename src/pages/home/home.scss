@@ -1,0 +1,64 @@
+@import "../../assets/css/global";
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .header-container {
+    @include flexBox(center, center);
+    .left-side {
+      flex: 1;
+      text-align: center;
+      .header-s, .footer-s {
+        font-size: 55px;
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+      .header-s {
+        @include flexBox(center, center);
+        gap: 50px;
+        h1 {
+          font-weight: bold;
+          font-size: 70px !important;
+        }
+        img {
+          max-width: 40px;
+        }
+      }
+      .footer-s {
+        background: $default-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .right-side {
+      flex: 1;
+      @include flexBox(center);
+    }
+  }
+
+  .footer-container {
+    .currencies {
+      @include flexBox(center, center);
+      gap: 12rem;
+      .currency {
+        text-align: center;
+        img {
+          max-width: 70px;
+          margin-bottom: 15px;
+        }
+        h1 {
+          @include flexBox(center, center);
+          gap: 8px;
+          font-size: 25px;
+          span {
+            font-size: 18px;
+          }
+        }
+        p {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
